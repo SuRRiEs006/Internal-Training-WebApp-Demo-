@@ -1,25 +1,24 @@
 :root {
-    --AccentColor: black;
+    --PrimaryColor: #D2CECB;
+    --SecondaryColor: #1F201D;
     --white: #ffffff;
   }
 
 body{
     font-family: "Rubik", sans-serif;
     font-weight: 300;
+    
 }
 
-.horizontal-scrollable > .row { 
+#mainColorFill{
+    background-color: var(--PrimaryColor);
+}
+
+/* NAV BUTTON FORMATTING */
+.horizontal-scrollableNavRow { 
     overflow-x: auto; 
     white-space: nowrap; 
 } 
-  
-.horizontal-scrollable > .row > .col-xs-4 { 
-    display: inline-block; 
-    float: none; 
-} 
-/* Decorations */ 
-  
-
   
 .navButtons{
     color: white; 
@@ -31,8 +30,15 @@ body{
     padding-right: 15px;
     border: none;
     font-weight: 400;
-    background: var(--AccentColor);
+    background: var(--SecondaryColor);
     font-family: "Rubik", sans-serif;
+    display: inline-block; 
+    float: none; 
+
+}
+
+#removePadding{
+    padding: 0px;
 
 }
     
@@ -40,3 +46,5 @@ body{
 ::-webkit-scrollbar {
 width: 0px;
 background: transparent; /* make scrollbar transparent */}
+
+/* NAV BUTTON FORMATTING ENDED */
