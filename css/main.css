@@ -2,17 +2,17 @@
     --PrimaryColor: #D2CECB;
     --SecondaryColor: #1F201D;
     --white: #ffffff;
-  }
+}
 
-body{
+body {
     font-family: "Rubik", sans-serif;
     font-weight: 300;
-    
+
 }
 
 
 
-.sideBar{
+.sideBar {
     font-family: "Rubik", sans-serif;
     font-size: 250%;
     font-weight: 550;
@@ -21,28 +21,37 @@ body{
 
 }
 
-
-.textLogoNavbarImage{
-    max-width: 60%; height: auto;
-                    margin: auto;
-                    display: block;margin-bottom: 50px;margin: 0; padding-top: 30px;
+#centerItem{
+    height: auto;
+    margin: auto;
+    display: block;
 }
 
-#mainColorFill{
+.textLogoNavbarImage {
+    max-width: 60%;
+    height: auto;
+    margin: auto;
+    display: block;
+    margin-bottom: 50px;
+    margin: 0;
+    padding-top: 30px;
+}
+
+#mainColorFill {
     background-color: var(--PrimaryColor);
 }
 
 /* NAV BUTTON FORMATTING */
-.horizontal-scrollableNavRow { 
-    overflow-x: auto; 
-    white-space: nowrap; 
-} 
-  
-.navButtons{
-    color: white; 
-    font-size: 20px; 
-    padding-bottom: 5px; 
-    padding-top: 5px; 
+.horizontal-scrollableNavRow {
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.navButtons {
+    color: white;
+    font-size: 20px;
+    padding-bottom: 5px;
+    padding-top: 5px;
     border-radius: 30px;
     padding-left: 15px;
     padding-right: 15px;
@@ -50,39 +59,45 @@ body{
     font-weight: 400;
     background: var(--SecondaryColor);
     font-family: "Rubik", sans-serif;
-    display: inline-block; 
-    float: none; 
+    display: inline-block;
+    float: none;
 
 }
 
 
-.mainLogo{
-    max-width: 65%; height: auto; 
+.mainLogo {
+    max-width: 65%;
+    height: auto;
     margin: auto;
-    display: block; 
+    display: block;
 }
-.centerImage{
-    height: auto; 
+
+.centerImage {
+    height: auto;
     margin: auto;
-    display: block; 
+    display: block;
 }
-#removePadding{
+
+#removePadding {
     padding: 0px;
 
 }
-.subheadingText{
-    color: var(--SecondaryColor); 
-    font-size: 20px; 
+
+.subheadingText {
+    color: var(--SecondaryColor);
+    font-size: 20px;
     font-weight: 700;
     font-family: "Rubik", sans-serif;
 
     margin-bottom: 20px;
 
 }
-    
+
 
 ::-webkit-scrollbar {
-width: 0px;
-background: transparent; /* make scrollbar transparent */}
+    width: 0px;
+    background: transparent;
+    /* make scrollbar transparent */
+}
 
 /* NAV BUTTON FORMATTING ENDED */
