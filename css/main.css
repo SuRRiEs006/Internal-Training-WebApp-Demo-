@@ -1,0 +1,88 @@
+:root {
+    --PrimaryColor: #D2CECB;
+    --SecondaryColor: #1F201D;
+    --white: #ffffff;
+  }
+
+body{
+    font-family: "Rubik", sans-serif;
+    font-weight: 300;
+    
+}
+
+
+
+.sideBar{
+    font-family: "Rubik", sans-serif;
+    font-size: 250%;
+    font-weight: 550;
+    margin-top: 30px;
+    text-align: center;
+
+}
+
+
+.textLogoNavbarImage{
+    max-width: 60%; height: auto;
+                    margin: auto;
+                    display: block;margin-bottom: 50px;margin: 0; padding-top: 30px;
+}
+
+#mainColorFill{
+    background-color: var(--PrimaryColor);
+}
+
+/* NAV BUTTON FORMATTING */
+.horizontal-scrollableNavRow { 
+    overflow-x: auto; 
+    white-space: nowrap; 
+} 
+  
+.navButtons{
+    color: white; 
+    font-size: 20px; 
+    padding-bottom: 5px; 
+    padding-top: 5px; 
+    border-radius: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: none;
+    font-weight: 400;
+    background: var(--SecondaryColor);
+    font-family: "Rubik", sans-serif;
+    display: inline-block; 
+    float: none; 
+
+}
+
+
+.mainLogo{
+    max-width: 65%; height: auto; 
+    margin: auto;
+    display: block; 
+}
+.centerImage{
+    height: auto; 
+    margin: auto;
+    display: block; 
+}
+#removePadding{
+    padding: 0px;
+
+}
+.subheadingText{
+    color: var(--SecondaryColor); 
+    font-size: 20px; 
+    font-weight: 700;
+    font-family: "Rubik", sans-serif;
+
+    margin-bottom: 20px;
+
+}
+    
+
+::-webkit-scrollbar {
+width: 0px;
+background: transparent; /* make scrollbar transparent */}
+
+/* NAV BUTTON FORMATTING ENDED */
