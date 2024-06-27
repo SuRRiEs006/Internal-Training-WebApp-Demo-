@@ -5,7 +5,6 @@
     <title>Latham Bakery</title>
 
     <script>
-
     </script>
 
     <!-- FONT IMPORTS -->
@@ -57,29 +56,62 @@
             font-size: 20px;
             background-color: var(--SecondaryColor);
             color: var(--white);
+            
         }
+
+        .accordianTitle {
+            font-size: 40px;
+            padding-top: 30px;
+            text-align: center;
+            
+        }
+
+        .layerTwoHeading {
+            font-size: 25px;
+            font-weight: 670;
+
+        }
+
+        .layerThreeHeading {
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        .layerFourHeading {
+            font-size: 15px;
+        }
+
+        .accordion-item {
+            border: 0px;
+        }
+
+        .containerForCordian {
+            background-color: var(--white);
+            padding-bottom: 30px;
+            padding-top: 30px;
+            border-radius: 30px;
+            margin-left: 10px;
+            margin-right: 10px;
+            padding-left: 20px;
+            padding-right:20px;
+            margin-bottom:10px;
+            
+        }
+        
     </style>
 </head>
 
 <body id="mainColorFill">
 
-
-
     <!-- BELOW IS THE NAVBAR WITH LOGO -->
     <nav class="navbar navbar-expand-lg navbar-light ">
         <div class="container" id="removePadding" style="padding-right: 0px; background-color: var(--PrimaryColor)">
-
-
-
             <div type="" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
                 aria-controls="offcanvasWithBothOptions" style=" background-color: var(--PrimaryColor);">
-
                 <img src="img/menu_icon.png" class="position-absolute top-50 start-0 translate-middle  " alt=""
                     style=" max-height: 30px; margin-left: 45px;margin-top: 15px; ">
-
                 <span class=" rounded float-left"></span>
             </div>
-
             <!-- JUST EDITED JUST EDITED JUST EDITED JUST EDITED JUST EDITED JUST EDITED -->
             <!-- <div class=" container row " id="removePadding" style="text-align: center;">
                 <img class="rounded mx-auto d-block" src="img/text_logo.png" alt="logo" style="max-width: 60%; height: auto;
@@ -87,115 +119,69 @@
                     display: block;margin-bottom: 50px;margin: 0; padding-top: 30px;">
 
             </div> -->
-
             <div class=" container row " id="removePadding" style="text-align: center;  margin:0px">
                 <a href="employeeWelcome.html"><img class="rounded mx-auto d-block textLogoNavbarImage"
                         src="img/text_logo.png" alt="logo"></a>
-
             </div>
-
         </div>
     </nav>
-    </div>
     <!-- ABOVE IS THE NAVBAR WITH LOGO -->
 
-
-
-
-
-
-
-
-
-
     <!-- THIS IS THE MENU ONCE OPEN -->
-    <!-- THIS IS THE MENU ONCE OPEN -->
-    <!-- THIS IS THE MENU ONCE OPEN -->
-    <!-- THIS IS THE MENU ONCE OPEN -->
-    <!-- THIS IS THE MENU ONCE OPEN -->
-    <!-- THIS IS THE MENU ONCE OPEN -->
-
-
     <div class="offcanvas offcanvas-start row" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
         aria-labelledby="offcanvasWithBothOptionsLabel" style="background-color: var(--PrimaryColor);width:90%;">
         <div class="offcanvas-header ">
-
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" style="padding: 20px;"
                 aria-label="Close"></button>
         </div>
         <div class=" container " id="removePadding" style="text-align: center; border-radius: 30px;">
             <img class="mainLogo" src="img/main_logo.png" alt="logo">
-
         </div>
-
         <div class="offcanvas-body container row" style="padding-right: 0px;">
-
             <a href="myAccount.html" id="removePadding">
                 <p class="sideBar">My Account</p>
             </a>
-
             <a href="trainingMainALL.html" id="removePadding">
                 <p class="sideBar">Training</p>
             </a>
-
             <a href="cookBookMain.html" id="removePadding">
                 <p class="sideBar">Cook Book</p>
             </a>
-
             <a href="policyGuide.html" id="removePadding">
                 <p class="sideBar">Policy Guide</p>
             </a>
-
             <a href="contactInfo.html" id="removePadding">
                 <p class="sideBar">Contact Info</p>
             </a>
         </div>
-
     </div>
-
-    <!-- ABOVE IS THE MENU ONCE OPEN -->
-    <!-- ABOVE IS THE MENU ONCE OPEN -->
-    <!-- ABOVE IS THE MENU ONCE OPEN -->
-    <!-- ABOVE IS THE MENU ONCE OPEN -->
     <!-- ABOVE IS THE MENU ONCE OPEN -->
 
-
-    <!-- WRITE CODE BELOW HERE -->
-
-
-
-
-
-    <div class="row" style="background-color: var(--white);padding-bottom: 30px; padding-top: 30px; ">
-        <div class="accordion" id="accordionExample">
-            <!-- Food Section -->
+    <div class="row containerForCordian">
+        <h1 class="accordianTitle" style="padding-top:5px">FOOD</h1>
+        <div class="accordion" id="accordionFood">
+            <!-- Breakfast Section -->
             <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFood" aria-expanded="true" aria-controls="collapseFood">
-                  Food
-                </button>
-              </h2>
-              <div id="collapseFood" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <div class="accordion" id="accordionFood">
-                    <!-- Breakfast Section -->
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBreakfast" aria-expanded="false" aria-controls="collapseBreakfast">
-                          Breakfast
-                        </button>
-                      </h2>
-                      <div id="collapseBreakfast" class="accordion-collapse collapse" data-bs-parent="#accordionFood">
-                        <div class="accordion-body">
-                          <div class="accordion" id="accordionBreakfast">
-                            <!-- Breakfast Items -->
-                            <div class="accordion-item">
-                              <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBreakfastItem1" aria-expanded="false" aria-controls="collapseBreakfastItem1">
-                                  Pancakes
+                <h2 class="accordion-header">
+                    <button class="accordion-button  layerTwoHeading bg-warning text-dark" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapseBreakfast" aria-expanded="false"
+                        aria-controls="collapseBreakfast">
+                        Breakfast
+                    </button>
+                </h2>
+                <div id="collapseBreakfast" class="accordion-collapse collapse show" data-bs-parent="#accordionFood">
+                    <div class="accordion-body">
+                        <!-- Breakfast Items -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed layerThreeHeading" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseBreakfastItem1"
+                                    aria-expanded="false" aria-controls="collapseBreakfastItem1">
+                                    Pancakes
                                 </button>
-                              </h2>
-                              <div id="collapseBreakfastItem1" class="accordion-collapse collapse" data-bs-parent="#accordionBreakfast">
+                            </h2>
+                            <div id="collapseBreakfastItem1" class="accordion-collapse collapse"
+                                data-bs-parent="#collapseBreakfast">
                                 <div class="accordion-body">
                                     <h2>Pancakes</h2>
                                     <p><strong>Ingredients</strong></p>
@@ -212,21 +198,26 @@
                                     <ol>
                                         <li>Mix flour, sugar, baking powder, and salt in a large bowl.</li>
                                         <li>In another bowl, beat the milk, egg, and melted butter together.</li>
-                                        <li>Pour the wet ingredients into the dry ingredients and stir until combined.</li>
+                                        <li>Pour the wet ingredients into the dry ingredients and stir until combined.
+                                        </li>
                                         <li>Heat a lightly oiled griddle or frying pan over medium-high heat.</li>
-                                        <li>Pour or scoop the batter onto the griddle, using approximately 1/4 cup for each pancake.</li>
+                                        <li>Pour or scoop the batter onto the griddle, using approximately 1/4 cup for
+                                            each pancake.</li>
                                         <li>Brown on both sides and serve hot.</li>
                                     </ol>
                                 </div>
-                              </div>
                             </div>
-                            <div class="accordion-item">
-                              <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBreakfastItem2" aria-expanded="false" aria-controls="collapseBreakfastItem2">
-                                  Omelette
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed layerThreeHeading" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseBreakfastItem2"
+                                    aria-expanded="false" aria-controls="collapseBreakfastItem2">
+                                    Omelette
                                 </button>
-                              </h2>
-                              <div id="collapseBreakfastItem2" class="accordion-collapse collapse" data-bs-parent="#accordionBreakfast">
+                            </h2>
+                            <div id="collapseBreakfastItem2" class="accordion-collapse collapse"
+                                data-bs-parent="#collapseBreakfast">
                                 <div class="accordion-body">
                                     <h2>Omelette</h2>
                                     <p><strong>Ingredients</strong></p>
@@ -240,20 +231,25 @@
                                     <ol>
                                         <li>Beat the eggs with salt and pepper.</li>
                                         <li>Heat butter in a non-stick skillet over medium heat.</li>
-                                        <li>Pour in the eggs and cook for a few minutes until the edges start to lift from the pan.</li>
+                                        <li>Pour in the eggs and cook for a few minutes until the edges start to lift
+                                            from the pan.</li>
                                         <li>Add fillings to one half of the omelette.</li>
-                                        <li>Fold the other half over the fillings and cook until the cheese melts and the eggs are set.</li>
+                                        <li>Fold the other half over the fillings and cook until the cheese melts and
+                                            the eggs are set.</li>
                                     </ol>
                                 </div>
-                              </div>
                             </div>
-                            <div class="accordion-item">
-                              <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBreakfastItem3" aria-expanded="false" aria-controls="collapseBreakfastItem3">
-                                  French Toast
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed layerThreeHeading" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseBreakfastItem3"
+                                    aria-expanded="false" aria-controls="collapseBreakfastItem3">
+                                    French Toast
                                 </button>
-                              </h2>
-                              <div id="collapseBreakfastItem3" class="accordion-collapse collapse" data-bs-parent="#accordionBreakfast">
+                            </h2>
+                            <div id="collapseBreakfastItem3" class="accordion-collapse collapse"
+                                data-bs-parent="#collapseBreakfast">
                                 <div class="accordion-body">
                                     <h2>French Toast</h2>
                                     <p><strong>Ingredients</strong></p>
@@ -269,355 +265,386 @@
                                     <ol>
                                         <li>Whisk together eggs, milk, vanilla, and cinnamon.</li>
                                         <li>Dip each slice of bread in the egg mixture, soaking both sides.</li>
-                                        <li>Heat butter in a skillet and cook the bread slices on medium heat until golden brown on both sides.</li>
+                                        <li>Heat butter in a skillet and cook the bread slices on medium heat until
+                                            golden brown on both sides.</li>
                                         <li>Serve hot with syrup or powdered sugar.</li>
                                     </ol>
                                 </div>
-                              </div>
                             </div>
-                          </div>
                         </div>
-                      </div>
                     </div>
-                    
-                    <!-- Lunch & Dinner Menu Section -->
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLunchDinner" aria-expanded="false" aria-controls="collapseLunchDinner">
-                          Lunch & Dinner Menu
-                        </button>
-                      </h2>
-                      <div id="collapseLunchDinner" class="accordion-collapse collapse" data-bs-parent="#accordionFood">
-                        <div class="accordion-body">
-                          <!-- Lunch & Dinner Menu Items -->
-                          <div class="accordion-item">
+                </div>
+            </div>
+
+            <!-- Lunch & Dinner Menu Section -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button layerTwoHeading bg-warning text-dark" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapseLunchDinner" aria-expanded="false"
+                        aria-controls="collapseLunchDinner">
+                        Lunch & Dinner Menu
+                    </button>
+                </h2>
+                <div id="collapseLunchDinner" class="accordion-collapse " data-bs-parent="#accordionFood">
+                    <div class="accordion-body">
+                        <!-- Lunch & Dinner Menu Items -->
+                        <div class="accordion-item">
                             <h2 class="accordion-header">
-                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLunchDinnerItem1" aria-expanded="false" aria-controls="collapseLunchDinnerItem1">
-                                Grilled Chicken Sandwich
-                              </button>
+                                <button class="accordion-button collapsed layerThreeHeading" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseLunchDinnerItem1"
+                                    aria-expanded="false" aria-controls="collapseLunchDinnerItem1">
+                                    Grilled Chicken Sandwich
+                                </button>
                             </h2>
-                            <div id="collapseLunchDinnerItem1" class="accordion-collapse collapse" data-bs-parent="#collapseLunchDinner">
-                              <div class="accordion-body">
-                                <h2>Grilled Chicken Sandwich</h2>
-                                <p><strong>Ingredients</strong></p>
-                                <ul>
-                                    <li>1 chicken breast</li>
-                                    <li>Salt and pepper</li>
-                                    <li>2 slices of bread</li>
-                                    <li>Lettuce, tomato, and mayonnaise</li>
-                                </ul>
-                                <p><strong>Directions</strong></p>
-                                <ol>
-                                    <li>Season the chicken breast with salt and pepper.</li>
-                                    <li>Grill the chicken until fully cooked and juicy.</li>
-                                    <li>Assemble the sandwich with bread, lettuce, tomato slices, mayonnaise, and the grilled chicken.</li>
-                                    <li>Serve immediately.</li>
-                                </ol>
-                              </div>
+                            <div id="collapseLunchDinnerItem1" class="accordion-collapse collapse"
+                                data-bs-parent="#collapseLunchDinner">
+                                <div class="accordion-body">
+                                    <h2>Grilled Chicken Sandwich</h2>
+                                    <p><strong>Ingredients</strong></p>
+                                    <ul>
+                                        <li>1 chicken breast</li>
+                                        <li>Salt and pepper</li>
+                                        <li>2 slices of bread</li>
+                                        <li>Lettuce, tomato, and mayonnaise</li>
+                                    </ul>
+                                    <p><strong>Directions</strong></p>
+                                    <ol>
+                                        <li>Season the chicken breast with salt and pepper.</li>
+                                        <li>Grill the chicken until fully cooked and juicy.</li>
+                                        <li>Assemble the sandwich with bread, lettuce, tomato slices, mayonnaise, and
+                                            the grilled chicken.</li>
+                                        <li>Serve immediately.</li>
+                                    </ol>
+                                </div>
                             </div>
-                          </div>
-                          <div class="accordion-item">
-                            <h2 class="accordion-header">
-                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLunchDinnerItem2" aria-expanded="false" aria-controls="collapseLunchDinnerItem2">
-                                Spaghetti Bolognese
-                              </button>
-                            </h2>
-                            <div id="collapseLunchDinnerItem2" class="accordion-collapse collapse" data-bs-parent="#collapseLunchDinner">
-                              <div class="accordion-body">
-                                <h2>Spaghetti Bolognese</h2>
-                                <p><strong>Ingredients</strong></p>
-                                <ul>
-                                    <li>200g spaghetti</li>
-                                    <li>200g ground beef</li>
-                                    <li>1 onion, chopped</li>
-                                    <li>2 cloves garlic, minced</li>
-                                    <li>1 can tomato sauce</li>
-                                    <li>Salt, pepper, and herbs to taste</li>
-                                </ul>
-                                <p><strong>Directions</strong></p>
-                                <ol>
-                                    <li>Cook spaghetti according to package instructions.</li>
-                                    <li>In a pan, cook ground beef with onion and garlic until browned.</li>
-                                    <li>Add tomato sauce and season with salt, pepper, and herbs.</li>
-                                    <li>Simmer for 20 minutes.</li>
-                                    <li>Serve the sauce over the cooked spaghetti.</li>
-                                </ol>
-                              </div>
-                            </div>
-                          </div>
                         </div>
-                      </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed layerThreeHeading" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseLunchDinnerItem2"
+                                    aria-expanded="false" aria-controls="collapseLunchDinnerItem2">
+                                    Spaghetti Bolognese
+                                </button>
+                            </h2>
+                            <div id="collapseLunchDinnerItem2" class="accordion-collapse collapse"
+                                data-bs-parent="#collapseLunchDinner">
+                                <div class="accordion-body">
+                                    <h2>Spaghetti Bolognese</h2>
+                                    <p><strong>Ingredients</strong></p>
+                                    <ul>
+                                        <li>200g spaghetti</li>
+                                        <li>200g ground beef</li>
+                                        <li>1 onion, chopped</li>
+                                        <li>2 cloves garlic, minced</li>
+                                        <li>1 can tomato sauce</li>
+                                        <li>Salt, pepper, and herbs to taste</li>
+                                    </ul>
+                                    <p><strong>Directions</strong></p>
+                                    <ol>
+                                        <li>Cook spaghetti according to package instructions.</li>
+                                        <li>In a pan, cook ground beef with onion and garlic until browned.</li>
+                                        <li>Add tomato sauce and season with salt, pepper, and herbs.</li>
+                                        <li>Simmer for 20 minutes.</li>
+                                        <li>Serve the sauce over the cooked spaghetti.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    
-                    <!-- Pastries Section -->
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePastries" aria-expanded="false" aria-controls="collapsePastries">
-                          Pastries
-                        </button>
-                      </h2>
-                      <div id="collapsePastries" class="accordion-collapse collapse" data-bs-parent="#accordionFood">
-                        <div class="accordion-body">
-                          <div class="accordion" id="accordionPastries">
+                </div>
+            </div>
+
+            <!-- Pastries Section -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button layerTwoHeading bg-warning text-dark" type="button "
+                        data-bs-toggle="collapse" data-bs-target="#collapsePastries" aria-expanded="false"
+                        aria-controls="collapsePastries">
+                        Pastries
+                    </button>
+                </h2>
+                <div id="collapsePastries" class="accordion-collapse " data-bs-parent="#accordionFood">
+                    <div class="accordion-body">
+                        <div class="accordion" id="accordionPastries">
                             <!-- Sweet Section -->
                             <div class="accordion-item">
-                              <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSweet" aria-expanded="false" aria-controls="collapseSweet">
-                                  Sweet
-                                </button>
-                              </h2>
-                              <div id="collapseSweet" class="accordion-collapse collapse" data-bs-parent="#accordionPastries">
-                                <div class="accordion-body">
-                                  <div class="accordion" id="accordionSweet">
-                                    <!-- Sweet Pastry Items -->
-                                    <div class="accordion-item">
-                                      <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSweetItem1" aria-expanded="false" aria-controls="collapseSweetItem1">
-                                          Chocolate Croissant
-                                        </button>
-                                      </h2>
-                                      <div id="collapseSweetItem1" class="accordion-collapse collapse" data-bs-parent="#accordionSweet">
-                                        <div class="accordion-body">
-                                            <h2>Chocolate Croissant</h2>
-                                            <p><strong>Ingredients</strong></p>
-                                            <ul>
-                                                <li>1 sheet puff pastry</li>
-                                                <li>Chocolate chips or bars</li>
-                                            </ul>
-                                            <p><strong>Directions</strong></p>
-                                            <ol>
-                                                <li>Cut the puff pastry into triangles.</li>
-                                                <li>Place chocolate at the base of each triangle and roll up.</li>
-                                                <li>Bake at 375°F (190°C) for 20 minutes until golden.</li>
-                                            </ol>
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed layerThreeHeading bg-danger text-white" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseSweet" aria-expanded="false"
+                                        aria-controls="collapseSweet">
+                                        Sweet
+                                    </button>
+                                </h2>
+                                <div id="collapseSweet" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionPastries">
+                                    <div class="accordion-body">
+                                        <div class="accordion" id="accordionSweet">
+                                            <!-- Sweet Pastry Items -->
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header">
+                                                    <button class="accordion-button collapsed layerFourHeading"
+                                                        type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseSweetItem1" aria-expanded="false"
+                                                        aria-controls="collapseSweetItem1">
+                                                        Chocolate Croissant
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseSweetItem1" class="accordion-collapse collapse"
+                                                    data-bs-parent="#accordionSweet">
+                                                    <div class="accordion-body">
+                                                        <h2>Chocolate Croissant</h2>
+                                                        <p><strong>Ingredients</strong></p>
+                                                        <ul>
+                                                            <li>1 sheet puff pastry</li>
+                                                            <li>Chocolate chips or bars</li>
+                                                        </ul>
+                                                        <p><strong>Directions</strong></p>
+                                                        <ol>
+                                                            <li>Cut the puff pastry into triangles.</li>
+                                                            <li>Place chocolate at the base of each triangle and roll
+                                                                up.</li>
+                                                            <li>Bake at 375°F (190°C) for 20 minutes until golden.</li>
+                                                        </ol>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header">
+                                                    <button class="accordion-button collapsed layerFourHeading"
+                                                        type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseSweetItem2" aria-expanded="false"
+                                                        aria-controls="collapseSweetItem2">
+                                                        Cinnamon Roll
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseSweetItem2" class="accordion-collapse collapse"
+                                                    data-bs-parent="#accordionSweet">
+                                                    <div class="accordion-body">
+                                                        <h2>Cinnamon Roll</h2>
+                                                        <p><strong>Ingredients</strong></p>
+                                                        <ul>
+                                                            <li>1 cup warm milk</li>
+                                                            <li>2 eggs</li>
+                                                            <li>1/3 cup butter, melted</li>
+                                                            <li>4 1/2 cups bread flour</li>
+                                                            <li>1 teaspoon salt</li>
+                                                            <li>1/2 cup white sugar</li>
+                                                            <li>2 1/2 teaspoons yeast</li>
+                                                            <li>1 cup brown sugar, packed</li>
+                                                            <li>2 1/2 tablespoons ground cinnamon</li>
+                                                            <li>1/3 cup butter, softened</li>
+                                                        </ul>
+                                                        <p><strong>Directions</strong></p>
+                                                        <ol>
+                                                            <li>Dissolve yeast in warm milk in a large bowl.</li>
+                                                            <li>Add sugar, butter, salt, eggs, and flour; mix well.</li>
+                                                            <li>Knead the dough into a large ball, using your hands
+                                                                dusted lightly with flour.</li>
+                                                            <li>Cover and let rise in a warm place until doubled in
+                                                                size, about 1 hour.</li>
+                                                            <li>Roll the dough into a rectangle. Spread butter and
+                                                                sprinkle evenly with sugar/cinnamon mixture.</li>
+                                                            <li>Roll up the dough and cut into 12 rolls.</li>
+                                                            <li>Place rolls in a lightly greased pan and cover them for
+                                                                30 minutes to rise.</li>
+                                                            <li>Bake at 375°F (190°C) for 20 minutes or until golden
+                                                                brown.</li>
+                                                        </ol>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header">
+                                                    <button class="accordion-button collapsed layerFourHeading"
+                                                        type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseSweetItem3" aria-expanded="false"
+                                                        aria-controls="collapseSweetItem3">
+                                                        Fruit Tart
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseSweetItem3" class="accordion-collapse collapse"
+                                                    data-bs-parent="#accordionSweet">
+                                                    <div class="accordion-body">
+                                                        <h2>Fruit Tart</h2>
+                                                        <p><strong>Ingredients</strong></p>
+                                                        <ul>
+                                                            <li>1 pastry crust</li>
+                                                            <li>1 cup custard or cream</li>
+                                                            <li>Fresh fruits (berries, kiwi slices, etc.)</li>
+                                                        </ul>
+                                                        <p><strong>Directions</strong></p>
+                                                        <ol>
+                                                            <li>Pre-bake the pastry crust according to package
+                                                                instructions.</li>
+                                                            <li>Fill the crust with custard or cream.</li>
+                                                            <li>Arrange fresh fruits on top.</li>
+                                                            <li>Chill before serving.</li>
+                                                        </ol>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                      </div>
                                     </div>
-                                    <div class="accordion-item">
-                                      <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSweetItem2" aria-expanded="false" aria-controls="collapseSweetItem2">
-                                          Cinnamon Roll
-                                        </button>
-                                      </h2>
-                                      <div id="collapseSweetItem2" class="accordion-collapse collapse" data-bs-parent="#accordionSweet">
-                                        <div class="accordion-body">
-                                            <h2>Cinnamon Roll</h2>
-                                            <p><strong>Ingredients</strong></p>
-                                            <ul>
-                                                <li>1 cup warm milk</li>
-                                                <li>2 eggs</li>
-                                                <li>1/3 cup butter, melted</li>
-                                                <li>4 1/2 cups bread flour</li>
-                                                <li>1 teaspoon salt</li>
-                                                <li>1/2 cup white sugar</li>
-                                                <li>2 1/2 teaspoons yeast</li>
-                                                <li>1 cup brown sugar, packed</li>
-                                                <li>2 1/2 tablespoons ground cinnamon</li>
-                                                <li>1/3 cup butter, softened</li>
-                                            </ul>
-                                            <p><strong>Directions</strong></p>
-                                            <ol>
-                                                <li>Dissolve yeast in warm milk in a large bowl.</li>
-                                                <li>Add sugar, butter, salt, eggs, and flour; mix well.</li>
-                                                <li>Knead the dough into a large ball, using your hands dusted lightly with flour.</li>
-                                                <li>Cover and let rise in a warm place until doubled in size, about 1 hour.</li>
-                                                <li>Roll the dough into a rectangle. Spread butter and sprinkle evenly with sugar/cinnamon mixture.</li>
-                                                <li>Roll up the dough and cut into 12 rolls.</li>
-                                                <li>Place rolls in a lightly greased pan and cover them for 30 minutes to rise.</li>
-                                                <li>Bake at 375°F (190°C) for 20 minutes or until golden brown.</li>
-                                            </ol>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                      <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSweetItem3" aria-expanded="false" aria-controls="collapseSweetItem3">
-                                          Fruit Tart
-                                        </button>
-                                      </h2>
-                                      <div id="collapseSweetItem3" class="accordion-collapse collapse" data-bs-parent="#accordionSweet">
-                                        <div class="accordion-body">
-                                            <h2>Fruit Tart</h2>
-                                            <p><strong>Ingredients</strong></p>
-                                            <ul>
-                                                <li>1 pastry crust</li>
-                                                <li>1 cup custard or cream</li>
-                                                <li>Fresh fruits (berries, kiwi slices, etc.)</li>
-                                            </ul>
-                                            <p><strong>Directions</strong></p>
-                                            <ol>
-                                                <li>Pre-bake the pastry crust according to package instructions.</li>
-                                                <li>Fill the crust with custard or cream.</li>
-                                                <li>Arrange fresh fruits on top.</li>
-                                                <li>Chill before serving.</li>
-                                            </ol>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
                                 </div>
-                              </div>
                             </div>
-                            
+
                             <!-- Savoury Section -->
                             <div class="accordion-item">
-                              <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSavoury" aria-expanded="false" aria-controls="collapseSavoury">
-                                  Savoury
-                                </button>
-                              </h2>
-                              <div id="collapseSavoury" class="accordion-collapse collapse" data-bs-parent="#accordionPastries">
-                                <div class="accordion-body">
-                                  <div class="accordion" id="accordionSavoury">
-                                    <!-- Savoury Pastry Items -->
-                                    <div class="accordion-item">
-                                      <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSavouryItem1" aria-expanded="false" aria-controls="collapseSavouryItem1">
-                                          Cheese Scone
-                                        </button>
-                                      </h2>
-                                      <div id="collapseSavouryItem1" class="accordion-collapse collapse" data-bs-parent="#accordionSavoury">
-                                        <div class="accordion-body">
-                                            <h2>Cheese Scone</h2>
-                                            <p><strong>Ingredients</strong></p>
-                                            <ul>
-                                                <li>2 cups all-purpose flour</li>
-                                                <li>1 tablespoon baking powder</li>
-                                                <li>1/2 teaspoon salt</li>
-                                                <li>1/2 cup cold butter, cubed</li>
-                                                <li>1 cup grated cheddar cheese</li>
-                                                <li>3/4 cup milk</li>
-                                            </ul>
-                                            <p><strong>Directions</strong></p>
-                                            <ol>
-                                                <li>Preheat oven to 425°F (220°C).</li>
-                                                <li>In a bowl, combine flour, baking powder, and salt.</li>
-                                                <li>Cut in the butter until the mixture resembles coarse crumbs.</li>
-                                                <li>Stir in the grated cheese.</li>
-                                                <li>Add milk and stir until the dough comes together.</li>
-                                                <li>Turn out onto a floured surface and knead briefly.</li>
-                                                <li>Pat dough into a round shape and cut into wedges.</li>
-                                                <li>Place on a baking sheet and bake for 12-15 minutes or until golden brown.</li>
-                                            </ol>
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed layerThreeHeading bg-danger text-white" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseSavoury"
+                                        aria-expanded="false" aria-controls="collapseSavoury">
+                                        Savoury
+                                    </button>
+                                </h2>
+                                <div id="collapseSavoury" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionPastries">
+                                    <div class="accordion-body">
+                                        <div class="accordion" id="accordionSavoury">
+                                            <!-- Savoury Pastry Items -->
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header">
+                                                    <button class="accordion-button collapsed layerFourHeading"
+                                                        type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseSavouryItem1" aria-expanded="false"
+                                                        aria-controls="collapseSavouryItem1">
+                                                        Cheese Scone
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseSavouryItem1" class="accordion-collapse collapse"
+                                                    data-bs-parent="#accordionSavoury">
+                                                    <div class="accordion-body">
+                                                        <h2>Cheese Scone</h2>
+                                                        <p><strong>Ingredients</strong></p>
+                                                        <ul>
+                                                            <li>2 cups all-purpose flour</li>
+                                                            <li>1 tablespoon baking powder</li>
+                                                            <li>1/2 teaspoon salt</li>
+                                                            <li>1/2 cup cold butter, cubed</li>
+                                                            <li>1 cup grated cheddar cheese</li>
+                                                            <li>3/4 cup milk</li>
+                                                        </ul>
+                                                        <p><strong>Directions</strong></p>
+                                                        <ol>
+                                                            <li>Preheat oven to 425°F (220°C).</li>
+                                                            <li>In a bowl, combine flour, baking powder, and salt.</li>
+                                                            <li>Cut in the butter until the mixture resembles coarse
+                                                                crumbs.</li>
+                                                            <li>Stir in the grated cheese.</li>
+                                                            <li>Add milk and stir until the dough comes together.</li>
+                                                            <li>Turn out onto a floured surface and knead briefly.</li>
+                                                            <li>Pat dough into a round shape and cut into wedges.</li>
+                                                            <li>Place on a baking sheet and bake for 12-15 minutes or
+                                                                until golden brown.</li>
+                                                        </ol>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header">
+                                                    <button class="accordion-button collapsed layerFourHeading"
+                                                        type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseSavouryItem2" aria-expanded="false"
+                                                        aria-controls="collapseSavouryItem2">
+                                                        Spinach and Feta Pastry
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseSavouryItem2" class="accordion-collapse collapse"
+                                                    data-bs-parent="#accordionSavoury">
+                                                    <div class="accordion-body">
+                                                        <h2>Spinach and Feta Pastry</h2>
+                                                        <p><strong>Ingredients</strong></p>
+                                                        <ul>
+                                                            <li>1 sheet puff pastry</li>
+                                                            <li>1 cup cooked spinach, drained</li>
+                                                            <li>1/2 cup crumbled feta cheese</li>
+                                                            <li>1/4 cup chopped onions</li>
+                                                            <li>1 garlic clove, minced</li>
+                                                            <li>1 egg (for egg wash)</li>
+                                                            <li>Salt and pepper to taste</li>
+                                                        </ul>
+                                                        <p><strong>Directions</strong></p>
+                                                        <ol>
+                                                            <li>Preheat oven to 375°F (190°C).</li>
+                                                            <li>In a bowl, mix spinach, feta cheese, onions, garlic,
+                                                                salt, and pepper.</li>
+                                                            <li>Roll out puff pastry and cut into squares.</li>
+                                                            <li>Spoon the spinach mixture into the center of each
+                                                                square.</li>
+                                                            <li>Fold the squares diagonally to form triangles and press
+                                                                the edges to seal.</li>
+                                                            <li>Brush the tops with beaten egg.</li>
+                                                            <li>Bake for 25 minutes or until golden and puffed.</li>
+                                                        </ol>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                      </div>
                                     </div>
-                                    <div class="accordion-item">
-                                      <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSavouryItem2" aria-expanded="false" aria-controls="collapseSavouryItem2">
-                                          Spinach and Feta Pastry
-                                        </button>
-                                      </h2>
-                                      <div id="collapseSavouryItem2" class="accordion-collapse collapse" data-bs-parent="#accordionSavoury">
-                                        <div class="accordion-body">
-                                            <h2>Spinach and Feta Pastry</h2>
-                                            <p><strong>Ingredients</strong></p>
-                                            <ul>
-                                                <li>1 sheet puff pastry</li>
-                                                <li>1 cup cooked spinach, drained</li>
-                                                <li>1/2 cup crumbled feta cheese</li>
-                                                <li>1/4 cup chopped onions</li>
-                                                <li>1 garlic clove, minced</li>
-                                                <li>1 egg (for egg wash)</li>
-                                                <li>Salt and pepper to taste</li>
-                                            </ul>
-                                            <p><strong>Directions</strong></p>
-                                            <ol>
-                                                <li>Preheat oven to 375°F (190°C).</li>
-                                                <li>In a bowl, mix spinach, feta cheese, onions, garlic, salt, and pepper.</li>
-                                                <li>Roll out puff pastry and cut into squares.</li>
-                                                <li>Spoon the spinach mixture into the center of each square.</li>
-                                                <li>Fold the squares diagonally to form triangles and press the edges to seal.</li>
-                                                <li>Brush the tops with beaten egg.</li>
-                                                <li>Bake for 25 minutes or until golden and puffed.</li>
-                                            </ol>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
                                 </div>
-                              </div>
                             </div>
-                            
-                          </div>
+
                         </div>
-                      </div>
                     </div>
-                    
-                  </div>
                 </div>
-              </div>
             </div>
-            
-            <!-- Drinks Section -->
+        </div>
+
+        <h1 class="accordianTitle" style="padding-top: 75px;">DRINKS</h1>
+        <div class="accordion" id="accordionDrinks">
+            <!-- Drink Example 1 -->
             <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDrinks" aria-expanded="false" aria-controls="collapseDrinks">
-                  Drinks
-                </button>
-              </h2>
-              <div id="collapseDrinks" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <div class="accordion" id="accordionDrinks">
-                    <!-- Drink Example 1 -->
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDrinkExample1" aria-expanded="false" aria-controls="collapseDrinkExample1">
-                          Coffee
-                        </button>
-                      </h2>
-                      <div id="collapseDrinkExample1" class="accordion-collapse collapse" data-bs-parent="#accordionDrinks">
-                        <div class="accordion-body">
-                            <h2>Coffee</h2>
-                            <p><strong>Ingredients</strong></p>
-                            <ul>
-                                <li>Coffee beans or ground coffee</li>
-                                <li>Water</li>
-                            </ul>
-                            <p><strong>Directions</strong></p>
-                            <ol>
-                                <li>Brew coffee using your preferred method.</li>
-                            </ol>
-                        </div>
-                      </div>
+                <h2 class="accordion-header">
+                    <button class="accordion-button layerTwoHeading bg-warning text-dark" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapseDrinkExample1" aria-expanded="false"
+                        aria-controls="collapseDrinkExample1">
+                        Coffee
+                    </button>
+                </h2>
+                <div id="collapseDrinkExample1" class="accordion-collapse collapse " data-bs-parent="#accordionDrinks">
+                    <div class="accordion-body">
+                        <h2>Coffee</h2>
+                        <p><strong>Ingredients</strong></p>
+                        <ul>
+                            <li>Coffee beans or ground coffee</li>
+                            <li>Water</li>
+                        </ul>
+                        <p><strong>Directions</strong></p>
+                        <ol>
+                            <li>Brew coffee using your preferred method.</li>
+                        </ol>
                     </div>
-                    <!-- Drink Example 2 -->
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDrinkExample2" aria-expanded="false" aria-controls="collapseDrinkExample2">
-                          Smoothie
-                        </button>
-                      </h2>
-                      <div id="collapseDrinkExample2" class="accordion-collapse collapse" data-bs-parent="#accordionDrinks">
-                        <div class="accordion-body">
-                            <h2>Smoothie</h2>
-                            <p><strong>Ingredients</strong></p>
-                            <ul>
-                                <li>1 cup mixed berries</li>
-                                <li>1 banana</li>
-                                <li>1/2 cup yogurt or milk</li>
-                            </ul>
-                            <p><strong>Directions</strong></p>
-                            <ol>
-                                <li>Blend all ingredients until smooth.</li>
-                                <li>Serve immediately.</li>
-                            </ol>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
                 </div>
-              </div>
             </div>
-          </div>
-          
-
-
-
+            <!-- Drink Example 2 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button layerTwoHeading bg-warning text-dark" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapseDrinkExample2" aria-expanded="false"
+                        aria-controls="collapseDrinkExample2">
+                        Smoothie
+                    </button>
+                </h2>
+                <div id="collapseDrinkExample2" class="accordion-collapse collapse" data-bs-parent="#accordionDrinks">
+                    <div class="accordion-body">
+                        <h2>Smoothie</h2>
+                        <p><strong>Ingredients</strong></p>
+                        <ul>
+                            <li>1 cup mixed berries</li>
+                            <li>1 banana</li>
+                            <li>1/2 cup yogurt or milk</li>
+                        </ul>
+                        <p><strong>Directions</strong></p>
+                        <ol>
+                            <li>Blend all ingredients until smooth.</li>
+                            <li>Serve immediately.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-
-    <!-- WRITE CODE ABOVE HERE -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
