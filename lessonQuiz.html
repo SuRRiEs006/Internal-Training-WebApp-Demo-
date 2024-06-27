@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Latham Bakery Quiz</title>
+
+    <!-- FONT IMPORTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+MX:wght@100..400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+
+    <!-- BOOTSTRAP IMPORT -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- IMPORT LOCAL CSS FILE -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #dcd8d6;
+            font-family: 'Rubik', sans-serif;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .navbar {
+            width: 100%;
+            background-color: var(--PrimaryColor);
+            padding: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .navbar img {
+            max-height: 50px;
+        }
+
+        .menu-icon {
+            position: absolute;
+            top: 15px;
+            left: 20px;
+            max-height: 30px;
+            cursor: pointer;
+        }
+
+        .background-title {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 3em;
+            color: rgba(0, 0, 0, 0.1);
+            z-index: 0;
+            text-align: center;
+            white-space: nowrap;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
+            width: 100%;
+            z-index: 1;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 400px;
+            width: 100%;
+            margin-top: 100px;
+            text-align: center;
+        }
+
+        .question-card {
+            display: none;
+            margin-bottom: 20px;
+        }
+
+        .question-card.active {
+            display: block;
+        }
+
+        .question-card h2 {
+            font-size: 1.2em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .question-card ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .question-card ul li {
+            margin: 10px 0;
+        }
+
+        .question-card ul li input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        .submit-card {
+            text-align: center;
+        }
+
+        .submit-card button {
+            background-color: #007bff;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 20px 0;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+
+        .submit-card button:hover {
+            background-color: #0056b3;
+        }
+
+        .popup {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+            z-index: 1001;
+        }
+
+        .popup-content {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            max-width: 300px;
+            width: 100%;
+        }
+
+        .popup-content h3 {
+            margin: 0 0 20px 0;
+            font-size: 1.2em;
+            color: #333;
+        }
+
+        .popup-content button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 14px;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .popup-content .confirm-button {
+            background-color: #007bff;
+            color: white;
+        }
+
+        .popup-content .cancel-button {
+            background-color: #ff4d4d;
+            color: white;
+        }
+    </style>
+</head>
+
+<body id="mainColorFill">
+
+    <div class="navbar" style="height: 100px;">
+        <img src="img/text_logo.png" alt="Latham Bakery">
+    </div>
+
+    <!-- Background Title -->
+    <div class="background-title">Lesson 1 Quiz</div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="card">
+            <div id="intro" class="question-card active">
+                <h2>Are you ready to start the quiz?</h2>
+                <p>There will be 3 questions.</p>
+                <div class="submit-card">
+                    <button onclick="startQuiz()">Start Quiz</button>
+                </div>
+            </div>
+
+            <div id="question1" class="question-card">
+                <h2>Question 1: What is the main ingredient in a bread recipe?</h2>
+                <ul>
+                    <li><input type="radio" name="question1" value="A">Flour</li>
+                    <li><input type="radio" name="question1" value="B">Sugar</li>
+                    <li><input type="radio" name="question1" value="C">Butter</li>
+                    <li><input type="radio" name="question1" value="D">Milk</li>
+                </ul>
+                <div class="submit-card">
+                    <button onclick="nextQuestion(1)">Next</button>
+                </div>
+            </div>
+
+            <div id="question2" class="question-card">
+                <h2>Question 2: Which of the following is used to make a cake rise?</h2>
+                <ul>
+                    <li><input type="radio" name="question2" value="A">Salt</li>
+                    <li><input type="radio" name="question2" value="B">Baking Soda</li>
+                    <li><input type="radio" name="question2" value="C">Coconut Oil</li>
+                    <li><input type="radio" name="question2" value="D">Water</li>
+                </ul>
+                <div class="submit-card">
+                    <button onclick="nextQuestion(2)">Next</button>
+                </div>
+            </div>
+
+            <div id="question3" class="question-card">
+                <h2>Question 3: What temperature is considered the 'danger zone' for food safety?</h2>
+                <ul>
+                    <li><input type="radio" name="question3" value="A">0-32°F</li>
+                    <li><input type="radio" name="question3" value="B">32-60°F</li>
+                    <li><input type="radio" name="question3" value="C">60-140°F</li>
+                    <li><input type="radio" name="question3" value="D">140-212°F</li>
+                </ul>
+                <div class="submit-card">
+                    <button onclick="submitQuiz()">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Result Popup -->
+    <div class="popup" id="resultPopup">
+        <div class="popup-content">
+            <h3 id="resultText"></h3>
+            <button class="confirm-button" onclick="goToHome()">Go to Home</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+    <script>
+        let currentQuestion = 0;
+
+        function startQuiz() {
+            document.getElementById('intro').classList.remove('active');
+            document.getElementById('question1').classList.add('active');
+            currentQuestion = 1;
+        }
+
+        function nextQuestion(questionNumber) {
+            const currentCard = document.getElementById(`question${questionNumber}`);
+            const nextCard = document.getElementById(`question${questionNumber + 1}`);
+
+            if (document.querySelector(`input[name="question${questionNumber}"]:checked`)) {
+                currentCard.classList.remove('active');
+                nextCard.classList.add('active');
+                currentQuestion++;
+            } else {
+                alert('Please select an answer before proceeding.');
+            }
+        }
+
+        function submitQuiz() {
+            let correctAnswers = 0;
+
+            if (document.querySelector('input[name="question1"]:checked')?.value === "A") {
+                correctAnswers++;
+            }
+            if (document.querySelector('input[name="question2"]:checked')?.value === "B") {
+                correctAnswers++;
+            }
+            if (document.querySelector('input[name="question3"]:checked')?.value === "C") {
+                correctAnswers++;
+            }
+
+            document.getElementById('resultText').innerText = "You answered " + correctAnswers + " out of 3 questions correctly!";
+            document.getElementById('resultPopup').style.display = 'flex';
+        }
+
+        function goToHome() {
+            window.location.href = 'employeewelcome.html';
+        }
+    </script>
+
+</body>
+
+</html>

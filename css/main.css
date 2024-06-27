@@ -99,5 +99,10 @@ body {
     background: transparent;
     /* make scrollbar transparent */
 }
-
+.lessonTitle{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
 /* NAV BUTTON FORMATTING ENDED */
