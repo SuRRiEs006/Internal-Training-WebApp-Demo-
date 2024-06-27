@@ -67,18 +67,18 @@
         }
 
         .layerTwoHeading {
-            font-size: 25px;
+            font-size: 20px;
             font-weight: 670;
 
         }
 
         .layerThreeHeading {
-            font-size: 15px;
+            font-size: 17px;
             font-weight: 500;
         }
 
         .layerFourHeading {
-            font-size: 15px;
+            font-size: 17px;
         }
 
         .accordion-item {
@@ -89,13 +89,16 @@
             background-color: var(--white);
             padding-bottom: 30px;
             padding-top: 30px;
-            border-radius: 30px;
+            border-radius: 10px;
             margin-left: 10px;
             margin-right: 10px;
             padding-left: 20px;
             padding-right:20px;
             margin-bottom:10px;
             
+        }
+        .accordion-body{
+            background-color: var(--white);
         }
         
     </style>
@@ -158,7 +161,7 @@
     <!-- ABOVE IS THE MENU ONCE OPEN -->
 
     <div class="row containerForCordian">
-        <h1 class="accordianTitle" style="padding-top:5px">FOOD</h1>
+        <h1 class="accordianTitle" style="padding-top:0px">FOOD</h1>
         <div class="accordion" id="accordionFood">
             <!-- Breakfast Section -->
             <div class="accordion-item">
@@ -169,7 +172,7 @@
                         Breakfast
                     </button>
                 </h2>
-                <div id="collapseBreakfast" class="accordion-collapse collapse show" data-bs-parent="#accordionFood">
+                <div id="collapseBreakfast" class="accordion-collapse collapse" data-bs-parent="#accordionFood">
                     <div class="accordion-body">
                         <!-- Breakfast Items -->
                         <div class="accordion-item">
@@ -285,7 +288,7 @@
                         Lunch & Dinner Menu
                     </button>
                 </h2>
-                <div id="collapseLunchDinner" class="accordion-collapse " data-bs-parent="#accordionFood">
+                <div id="collapseLunchDinner" class="accordion-collapse collapse" data-bs-parent="#accordionFood">
                     <div class="accordion-body">
                         <!-- Lunch & Dinner Menu Items -->
                         <div class="accordion-item">
@@ -358,12 +361,12 @@
             <div class="accordion-item">
                 <h2 class="accordion-header">
                     <button class="accordion-button layerTwoHeading bg-warning text-dark" type="button "
-                        data-bs-toggle="collapse" data-bs-target="#collapsePastries" aria-expanded="false"
+                        data-bs-toggle="collapse" data-bs-target="#collapsePastries" aria-expanded="true"
                         aria-controls="collapsePastries">
                         Pastries
                     </button>
                 </h2>
-                <div id="collapsePastries" class="accordion-collapse " data-bs-parent="#accordionFood">
+                <div id="collapsePastries" class="accordion-collapse collapse show" data-bs-parent="#accordionFood">
                     <div class="accordion-body">
                         <div class="accordion" id="accordionPastries">
                             <!-- Sweet Section -->
