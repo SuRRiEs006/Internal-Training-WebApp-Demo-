@@ -33,7 +33,9 @@
             color: initial;
             text-decoration: inherit;
         }
-
+        .row{
+            margin: auto;
+        }
 
 
 
@@ -64,16 +66,23 @@
         }
 
         .poll-container {
-            margin: 15px ;
-            margin-top: 0px;
+            margin: auto ;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            margin-left: 15px;
+            margin-right: 15px;
             padding: 20px;
-            max-width: 400px;
+            max-width: 97%;
             background-color: var(--white);
             
             border-radius: 38px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             text-align: left;
         }
+        .col-lg{
+            padding: 0px;
+        }
+
 
         .poll-container h3 {
             margin-bottom: 20px;
@@ -251,7 +260,10 @@
     border-top-left-radius: 4px;
     border-right: 3px solid #727cf5;
 }
-
+.timeline {
+    max-width: 70%; /* Adjust this percentage based on your design preference */
+    margin: auto; /* This centers the divs on the page */
+}
 .rtl .timeline .event::before {
     left: 0;
     right: -170px;
@@ -261,6 +273,8 @@
     left: 0;
     right: -55.8px;
 }
+
+
     </style>
 </head>
 
@@ -304,37 +318,18 @@
         <p style="font-size: 70px;font-family: 'Rubik';font-weight: 650; margin: 0px;">WELCOME</p>
         <div class="container horizontal-scrollable" style="margin-bottom: 0px;">
             <div class="horizontal-scrollableNavRow text-center" style="overflow: scroll; padding-right: 15px;padding-bottom: 0px;">
-                <button class="navButtons">My Account</button>
-                <button class="navButtons">Recipe Book</button>
-                <button class="navButtons">Announcements</button>
-                <button class="navButtons">My Store</button>
-                <button class="navButtons">rthe5</button>
-                <button class="navButtons">6</button>
-                <button class="navButtons">7</button>
+                <a href="https://app.groupme.com" target="_blank"><button class="navButtons">GroupMe</button></a>
+                <a href="https://joinhomebase.com" onclick="openHomebaseApp(); return false;"><button class="navButtons">HomeBase</button></a>
+                <a href="trainingMainALL.html"><button class="navButtons">My Courses</button></a>
+                <a href="https://lathambakery.net/"><button class="navButtons">Latham Website</button></a>
+
             </div>
         </div>
     </center>
     <!-- ABOVE IS THE QUICK ACCESS SCROLL MENU FOR WELCOME PAGE -->
 
     <!-- POLL SECTION -->
-    <div class="poll-container">
-        <h3 class="lessonTitle" style="margin-top: 10px;">POLL: <br>How is the new app working?</h3>
-        <ul class="poll-options">
-            <li><label><input type="radio" name="poll" value="Good"> Good</label></li>
-            <li><label><input type="radio" name="poll" value="Excellent"> Excellent</label></li>
-            <li><label><input type="radio" name="poll" value="Bad"> Bed</label></li>
-            <li><label><input type="radio" name="poll" value="Can Be Improved"> Can Be Improved</label></li>
 
-        </ul>
-        <button class="poll-button" onclick="showResults()">Vote</button>
-        <ul class="poll-results">
-            <li>Good: <div class="bar" data-color="blue" style="width: 35%"></div></li>
-            <li>Excellent: <div class="bar" data-color="green" style="width: 50%"></div></li>
-            <li>Bad: <div class="bar" data-color="red" style="width: 10%"></div></li>
-            <li>Can Be Improved: <div class="bar" data-color="orange" style="width: 5%"></div></li>
-
-        </ul>
-    </div>
 
     <!-- THIS IS THE MENU ONCE OPEN -->
     <div class="offcanvas offcanvas-start row" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
@@ -371,7 +366,87 @@
     </div>
     <!-- ABOVE IS THE MENU ONCE OPEN -->
 
+<div class="row">
 
+
+    
+    <div class="col-lg">
+        <div class="poll-container">
+            <h3 class="lessonTitle" style="margin-top: 10px;">POLL: <br>How is the new app working?</h3>
+            <ul class="poll-options">
+                <li><label><input type="radio" name="poll" value="Good"> Good</label></li>
+                <li><label><input type="radio" name="poll" value="Excellent"> Excellent</label></li>
+                <li><label><input type="radio" name="poll" value="Bad"> Bed</label></li>
+                <li><label><input type="radio" name="poll" value="Can Be Improved"> Can Be Improved</label></li>
+        
+            </ul>
+            <button class="poll-button" onclick="showResults()">Vote</button>
+            <ul class="poll-results">
+                <li>Good: <div class="bar" data-color="blue" style="width: 35%"></div></li>
+                <li>Excellent: <div class="bar" data-color="green" style="width: 50%"></div></li>
+                <li>Bad: <div class="bar" data-color="red" style="width: 10%"></div></li>
+                <li>Can Be Improved: <div class="bar" data-color="orange" style="width: 5%"></div></li>
+        
+            </ul>
+        </div>
+
+
+    </div>
+
+
+    <div class="col-lg">
+        <div class="poll-container">
+            <h3 class="lessonTitle" style="margin-top: 10px;">POLL: <br>How is the new app working?</h3>
+            <ul class="poll-options">
+                <li><label><input type="radio" name="poll" value="Good"> Good</label></li>
+                <li><label><input type="radio" name="poll" value="Excellent"> Excellent</label></li>
+                <li><label><input type="radio" name="poll" value="Bad"> Bed</label></li>
+                <li><label><input type="radio" name="poll" value="Can Be Improved"> Can Be Improved</label></li>
+        
+            </ul>
+            <button class="poll-button" onclick="showResults()">Vote</button>
+            <ul class="poll-results">
+                <li>Good: <div class="bar" data-color="blue" style="width: 35%"></div></li>
+                <li>Excellent: <div class="bar" data-color="green" style="width: 50%"></div></li>
+                <li>Bad: <div class="bar" data-color="red" style="width: 10%"></div></li>
+                <li>Can Be Improved: <div class="bar" data-color="orange" style="width: 5%"></div></li>
+        
+            </ul>
+        </div>
+
+
+    </div> <div class="col-lg">
+        <div class="poll-container">
+            <h3 class="lessonTitle" style="margin-top: 10px;">POLL: <br>How is the new app working?</h3>
+            <ul class="poll-options">
+                <li><label><input type="radio" name="poll" value="Good"> Good</label></li>
+                <li><label><input type="radio" name="poll" value="Excellent"> Excellent</label></li>
+                <li><label><input type="radio" name="poll" value="Bad"> Bed</label></li>
+                <li><label><input type="radio" name="poll" value="Can Be Improved"> Can Be Improved</label></li>
+        
+            </ul>
+            <button class="poll-button" onclick="showResults()">Vote</button>
+            <ul class="poll-results">
+                <li>Good: <div class="bar" data-color="blue" style="width: 35%"></div></li>
+                <li>Excellent: <div class="bar" data-color="green" style="width: 50%"></div></li>
+                <li>Bad: <div class="bar" data-color="red" style="width: 10%"></div></li>
+                <li>Can Be Improved: <div class="bar" data-color="orange" style="width: 5%"></div></li>
+        
+            </ul>
+        </div>
+
+
+    </div>
+    
+ 
+
+    
+
+</div>
+
+
+
+<div class="row">
 
     <div class="container" >
         <div class="row">
@@ -397,8 +472,8 @@
             </div>
         </div>
     </div>
-
-
+    
+</div>
 
 
 
@@ -422,6 +497,20 @@
             document.querySelector('.poll-results').style.display = 'block';
         }
     </script>
+
+
+    <script>
+    function openHomebaseApp() {
+        // Attempt to open the Homebase app using its scheme
+        window.location = 'homebase://';
+    
+        // Fallback to opening the website after 500 milliseconds if the app doesn't open
+        setTimeout(function() {
+            window.location = 'https://joinhomebase.com';
+        }, 500);
+    }
+    </script>
+    
 </body>
 
 </html>
