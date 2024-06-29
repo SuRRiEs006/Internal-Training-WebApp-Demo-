@@ -4,22 +4,16 @@
 <head>
     <title>Latham Bakery</title>
 
-    <script>
-
-    </script>
-
     <!-- FONT IMPORTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+MX:wght@100..400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
 
-
-
-    <!-- BOOTSTRAP INPORT -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- BOOTSTRAP IMPORT -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
     <!-- IMPORT LOCAL CSS FILE -->
@@ -27,7 +21,6 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
 
     <style>
         /* do not edit below */
@@ -40,25 +33,242 @@
             color: initial;
             text-decoration: inherit;
         }
-        /* .mainLogo{
-            max-width: 50%; height: auto;
-            margin: auto;
-            display: block;
-        } */
-        /* do not edit above */
 
+
+
+
+
+
+
+        body {
+            background-color: #dcd8d6;
+            
+            font-family: 'Rubik', sans-serif;
+
+        }
+
+        .horizontal-scrollable {
+            width: 100%;
+            white-space: nowrap;
+            overflow-x: auto;
+        }
+
+        .horizontal-scrollableNavRow {
+            display: inline-flex;
+        }
+
+
+
+        .navButtons:hover {
+           opacity: .8;
+        }
+
+        .poll-container {
+            margin: 15px ;
+            margin-top: 0px;
+            padding: 25px;
+            max-width: 400px;
+            background-color: var(--white);
+            
+            border-radius: 38px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        .poll-container h3 {
+            margin-bottom: 20px;
+            font-size: 1.5em;
+            color: #333;
+            text-align: center;
+        }
+
+        .poll-options {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 20px;
+        }
+
+        .poll-options li {
+            margin-bottom: 10px;
+        }
+
+        .poll-options input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        .poll-button {
+            background-color: #007bff;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 8px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .poll-button:hover {
+            background-color: #0056b3;
+        }
+
+        .poll-results {
+            display: none;
+            text-align: left;
+        }
+
+        .poll-results li {
+            margin-bottom: 10px;
+        }
+
+        .poll-results .bar {
+            height: 20px;
+            border-radius: 5px;
+        }
+
+        .poll-results .bar[data-color="red"] {
+            background-color: #ff4d4d;
+        }
+
+        .poll-results .bar[data-color="blue"] {
+            background-color: #007bff;
+        }
+
+        .poll-results .bar[data-color="green"] {
+            background-color: #28a745;
+        }
+
+        .poll-results .bar[data-color="orange"] {
+            background-color: #fd7e14;
+        }
+
+        .poll-results .bar[data-color="gray"] {
+            background-color: #6c757d;
+        }
+
+
+        .timeline {
+    border-left: 3px solid #727cf5;
+    border-bottom-right-radius: 4px;
+    border-radius: 8px;
+    border-top-right-radius: 4px;
+    background: rgba(114, 124, 245, 0.09);
+    margin: 0 auto;
+    letter-spacing: 0.2px;
+    position: relative;
+    line-height: 1.4em;
+    font-size: 1.03em;
+    padding: 50px;
+    list-style: none;
+    text-align: left;
+    max-width: 40%;
+}
+
+@media (max-width: 767px) {
+    .timeline {
+        max-width: 98%;
+        padding: 25px;
+    }
+}
+
+.timeline h1 {
+    font-weight: 300;
+    font-size: 1.4em;
+}
+
+.timeline h2,
+.timeline h3 {
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.timeline .event {
+    border-bottom: 1px dashed #e8ebf1;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+@media (max-width: 767px) {
+    .timeline .event {
+        padding-top: 30px;
+    }
+}
+
+.timeline .event:last-of-type {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border: none;
+}
+
+.timeline .event:before,
+.timeline .event:after {
+    position: absolute;
+    display: block;
+    top: 0;
+}
+
+.timeline .event:before {
+    left: -207px;
+    content: attr(data-date);
+    text-align: right;
+    font-weight: 100;
+    font-size: 0.9em;
+    min-width: 120px;
+}
+
+@media (max-width: 767px) {
+    .timeline .event:before {
+        left: 0px;
+        text-align: left;
+    }
+}
+
+.timeline .event:after {
+    -webkit-box-shadow: 0 0 0 3px #727cf5;
+    box-shadow: 0 0 0 3px #727cf5;
+    left: -55.8px;
+    background: #fff;
+    border-radius: 50%;
+    height: 9px;
+    width: 9px;
+    content: "";
+    top: 5px;
+}
+
+@media (max-width: 767px) {
+    .timeline .event:after {
+        left: -31.8px;
+    }
+}
+
+.rtl .timeline {
+    border-left: 0;
+    text-align: right;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    border-right: 3px solid #727cf5;
+}
+
+.rtl .timeline .event::before {
+    left: 0;
+    right: -170px;
+}
+
+.rtl .timeline .event::after {
+    left: 0;
+    right: -55.8px;
+}
     </style>
 </head>
 
 <body id="mainColorFill">
 
-
-
-<!-- BELOW IS THE NAVBAR WITH LOGO -->
-    <nav class="navbar navbar-expand-lg navbar-light ">
+    <!-- BELOW IS THE NAVBAR WITH LOGO -->
+    <nav class="navbar navbar-expand-lg navbar-light " style="margin-bottom:0px">
         <div class="container" id="removePadding" style="padding-right: 0px; background-color: var(--PrimaryColor)">
-
-
 
             <div type="" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
                 aria-controls="offcanvasWithBothOptions" style=" background-color: var(--PrimaryColor);">
@@ -69,71 +279,63 @@
                 <span class=" rounded float-left"></span>
             </div>
 
-
-            <div class=" container row " id="removePadding" style="text-align: center; margin:0px">
-                <img class="rounded mx-auto d-block" src="img/text_logo.png" alt="logo" style="max-width: 60%; height: auto;
-                    margin: auto;
-                    display: block;margin-bottom: 50px;margin: 0; padding-top: 30px;">
-
+            <div class="container row" id="removePadding" style="text-align: center; margin:0px">
+                <img class="rounded mx-auto d-block" src="img/text_logo.png" alt="logo"
+                    style="max-width: 60%; height: auto; margin: auto; display: block;margin-bottom: 50px;margin: 0; padding-top: 30px;">
             </div>
         </div>
     </nav>
-    </div>
-<!-- ABOVE IS THE NAVBAR WITH LOGO -->
+    <!-- ABOVE IS THE NAVBAR WITH LOGO -->
 
-
-
-
-
-<!-- THIS IS THE QUICK ACCSESS SCROLL MENU FOR WELCOME PAGE -->
+    <!-- THIS IS THE QUICK ACCESS SCROLL MENU FOR WELCOME PAGE -->
     <center>
-            <p style="font-size: 70px;font-family: 'Rubik';font-weight: 650; margin: 0px;">WELCOME</p>
-
-
-
-        <div class="container horizontal-scrollable" id="">
-            <div class="horizontal-scrollableNavRow text-center"
-                style="overflow: scroll; padding-right: 15px; /* Hide scrollbars */">
-                <button class=" navButtons">My Account</button>
-                <button class=" navButtons">Recipe Book</button>
-                <button class=" navButtons">Announcements</button>
-                <button class=" navButtons">My Store</button>
-                <button class=" navButtons">rthe5</button>
-                <button class=" navButtons">6</button>
-                <button class=" navButtons">7</button>
+        <p style="font-size: 70px;font-family: 'Rubik';font-weight: 650; margin: 0px;">WELCOME</p>
+        <div class="container horizontal-scrollable" style="margin-bottom: 0px;">
+            <div class="horizontal-scrollableNavRow text-center" style="overflow: scroll; padding-right: 15px;padding-bottom: 0px;">
+                <button class="navButtons">My Account</button>
+                <button class="navButtons">Recipe Book</button>
+                <button class="navButtons">Announcements</button>
+                <button class="navButtons">My Store</button>
+                <button class="navButtons">rthe5</button>
+                <button class="navButtons">6</button>
+                <button class="navButtons">7</button>
             </div>
         </div>
-        </div>
     </center>
-<!-- ABOVE IS THE QUICK ACCSESS SCROLL MENU FOR WELCOME PAGE -->
+    <!-- ABOVE IS THE QUICK ACCESS SCROLL MENU FOR WELCOME PAGE -->
 
+    <!-- POLL SECTION -->
+    <div class="poll-container">
+        <h3 class="lessonTitle">POLL: <br><br>How is My Site?</h3>
+        <ul class="poll-options">
+            <li><label><input type="radio" name="poll" value="Good"> Good</label></li>
+            <li><label><input type="radio" name="poll" value="Excellent"> Excellent</label></li>
+            <li><label><input type="radio" name="poll" value="Bad"> Bed</label></li>
+            <li><label><input type="radio" name="poll" value="Can Be Improved"> Can Be Improved</label></li>
 
+        </ul>
+        <button class="poll-button" onclick="showResults()">Vote</button>
+        <ul class="poll-results">
+            <li>Good: <div class="bar" data-color="blue" style="width: 30%"></div></li>
+            <li>Excellent: <div class="bar" data-color="green" style="width: 40%"></div></li>
+            <li>Bed: <div class="bar" data-color="red" style="width: 10%"></div></li>
+            <li>Can Be Improved: <div class="bar" data-color="orange" style="width: 5%"></div></li>
 
+        </ul>
+    </div>
 
-
-
-
-<!-- THIS IS THE MENU ONCE OPEN -->
-<!-- THIS IS THE MENU ONCE OPEN -->
-<!-- THIS IS THE MENU ONCE OPEN -->
-<!-- THIS IS THE MENU ONCE OPEN -->
-<!-- THIS IS THE MENU ONCE OPEN -->
-<!-- THIS IS THE MENU ONCE OPEN -->
-
-
+    <!-- THIS IS THE MENU ONCE OPEN -->
     <div class="offcanvas offcanvas-start row" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
         aria-labelledby="offcanvasWithBothOptionsLabel" style="background-color: var(--PrimaryColor);width:90%;">
-        <div class="offcanvas-header ">
-
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" style="padding: 20px;"   aria-label="Close"></button>
+        <div class="offcanvas-header">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" style="padding: 20px;"
+                aria-label="Close"></button>
         </div>
-        <div class=" container " id="removePadding" style="text-align: center; border-radius: 30px;">
-            <img class="mainLogo" src="img/main_logo.png" alt="logo" >
-
+        <div class="container" id="removePadding" style="text-align: center; border-radius: 30px;">
+            <img class="mainLogo" src="img/main_logo.png" alt="logo">
         </div>
 
         <div class="offcanvas-body container row" style="padding-right: 0px;">
-
             <a href="myAccount.html" id="removePadding">
                 <p class="sideBar">My Account</p>
             </a>
@@ -154,14 +356,43 @@
                 <p class="sideBar">Contact Info</p>
             </a>
         </div>
+    </div>
+    <!-- ABOVE IS THE MENU ONCE OPEN -->
 
+
+
+    <div class="container" >
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card" style="border-radius: 38px;">
+                    <div class="card-body">
+                        <h3 class="lessonTitle">Timeline</h3>
+                        <div id="content">
+                            <ul class="timeline">
+                                <li class="event" data-date="12:30 - 1:00pm">
+                                    <h3>Registration</h3>
+                                    <p>Get here on time, it's first come first serve. Be late, get turned away.</p>
+                                </li>
+                                <li class="event" data-date="2:30 - 4:00pm">
+                                    <h3>Opening Ceremony</h3>
+                                    <p>Get ready for an exciting event, this will kick off in amazing fashion with MOP &amp; Busta Rhymes as an opening show.</p>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-<!-- ABOVE IS THE MENU ONCE OPEN -->
-<!-- ABOVE IS THE MENU ONCE OPEN -->
-<!-- ABOVE IS THE MENU ONCE OPEN -->
-<!-- ABOVE IS THE MENU ONCE OPEN -->
-<!-- ABOVE IS THE MENU ONCE OPEN -->
+
+
+
+
+
+
+
 
 
 
@@ -172,6 +403,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script>
+        function showResults() {
+            document.querySelector('.poll-options').style.display = 'none';
+            document.querySelector('.poll-button').style.display = 'none';
+            document.querySelector('.poll-results').style.display = 'block';
+        }
+    </script>
 </body>
 
 </html>
