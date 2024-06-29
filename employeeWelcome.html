@@ -66,7 +66,7 @@
         .poll-container {
             margin: 15px ;
             margin-top: 0px;
-            padding: 25px;
+            padding: 20px;
             max-width: 400px;
             background-color: var(--white);
             
@@ -85,7 +85,7 @@
         .poll-options {
             list-style: none;
             padding: 0;
-            margin-bottom: 20px;
+            margin-bottom: 12px;
         }
 
         .poll-options li {
@@ -267,8 +267,10 @@
 <body id="mainColorFill">
 
     <!-- BELOW IS THE NAVBAR WITH LOGO -->
-    <nav class="navbar navbar-expand-lg navbar-light " style="margin-bottom:0px">
+    <nav class="navbar navbar-expand-lg navbar-light ">
         <div class="container" id="removePadding" style="padding-right: 0px; background-color: var(--PrimaryColor)">
+
+
 
             <div type="" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
                 aria-controls="offcanvasWithBothOptions" style=" background-color: var(--PrimaryColor);">
@@ -279,10 +281,20 @@
                 <span class=" rounded float-left"></span>
             </div>
 
-            <div class="container row" id="removePadding" style="text-align: center; margin:0px">
-                <img class="rounded mx-auto d-block" src="img/text_logo.png" alt="logo"
-                    style="max-width: 60%; height: auto; margin: auto; display: block;margin-bottom: 50px;margin: 0; padding-top: 30px;">
+            <!-- JUST EDITED JUST EDITED JUST EDITED JUST EDITED JUST EDITED JUST EDITED -->
+            <!-- <div class=" container row " id="removePadding" style="text-align: center;">
+                <img class="rounded mx-auto d-block" src="img/text_logo.png" alt="logo" style="max-width: 60%; height: auto;
+                    margin: auto;
+                    display: block;margin-bottom: 50px;margin: 0; padding-top: 30px;">
+
+            </div> -->
+
+            <div class=" container row " id="removePadding" style="text-align: center;  margin:0px">
+                <a href="employeeWelcome.html"><img class="rounded mx-auto d-block textLogoNavbarImage"
+                        src="img/text_logo.png" alt="logo"></a>
+
             </div>
+
         </div>
     </nav>
     <!-- ABOVE IS THE NAVBAR WITH LOGO -->
@@ -306,7 +318,7 @@
 
     <!-- POLL SECTION -->
     <div class="poll-container">
-        <h3 class="lessonTitle">POLL: <br><br>How is My Site?</h3>
+        <h3 class="lessonTitle" style="margin-top: 10px;">POLL: <br>How is the new app working?</h3>
         <ul class="poll-options">
             <li><label><input type="radio" name="poll" value="Good"> Good</label></li>
             <li><label><input type="radio" name="poll" value="Excellent"> Excellent</label></li>
@@ -316,9 +328,9 @@
         </ul>
         <button class="poll-button" onclick="showResults()">Vote</button>
         <ul class="poll-results">
-            <li>Good: <div class="bar" data-color="blue" style="width: 30%"></div></li>
-            <li>Excellent: <div class="bar" data-color="green" style="width: 40%"></div></li>
-            <li>Bed: <div class="bar" data-color="red" style="width: 10%"></div></li>
+            <li>Good: <div class="bar" data-color="blue" style="width: 35%"></div></li>
+            <li>Excellent: <div class="bar" data-color="green" style="width: 50%"></div></li>
+            <li>Bad: <div class="bar" data-color="red" style="width: 10%"></div></li>
             <li>Can Be Improved: <div class="bar" data-color="orange" style="width: 5%"></div></li>
 
         </ul>
@@ -366,16 +378,16 @@
             <div class="col-md-12">
                 <div class="card" style="border-radius: 38px;">
                     <div class="card-body">
-                        <h3 class="lessonTitle">Timeline</h3>
+                        <h3 class="lessonTitle" style="font-size: 21px;">Timeline</h3>
                         <div id="content">
                             <ul class="timeline">
-                                <li class="event" data-date="12:30 - 1:00pm">
-                                    <h3>Registration</h3>
-                                    <p>Get here on time, it's first come first serve. Be late, get turned away.</p>
+                                <li class="event" data-date="July 15, 2024">
+                                    <h1> <b>New Bakery Opening Preparation Workshop</b></h1>
+                                    <p>Participate in our comprehensive workshop to prepare for the grand opening of our new bakery location in Dallas. This session will cover all essential procedures, customer service training, and safety protocols to ensure a smooth opening day.</p>
                                 </li>
-                                <li class="event" data-date="2:30 - 4:00pm">
-                                    <h3>Opening Ceremony</h3>
-                                    <p>Get ready for an exciting event, this will kick off in amazing fashion with MOP &amp; Busta Rhymes as an opening show.</p>
+                                <li class="event" data-date="July 22, 2024">
+                                   <h1> <b>Summer Seasonal Training Session</b></h1>
+                                    <p>Join us for a seasonal training session focused on summer-themed products and promotions. This workshop will include training on new summer recipes, efficient production techniques, and marketing strategies to enhance our offerings during the summer season.</p>
                                 </li>
 
                             </ul>
