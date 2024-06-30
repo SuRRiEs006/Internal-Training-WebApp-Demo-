@@ -33,7 +33,8 @@
             color: initial;
             text-decoration: inherit;
         }
-        .row{
+
+        .row {
             margin: auto;
         }
 
@@ -44,8 +45,13 @@
 
         body {
             background-color: #dcd8d6;
-            
+
             font-family: 'Rubik', sans-serif;
+            line-height: 1.5;
+            min-height: 100vh;
+
+
+            padding-bottom: 3vh;
 
         }
 
@@ -62,11 +68,11 @@
 
 
         .navButtons:hover {
-           opacity: .8;
+            opacity: .8;
         }
 
         .poll-container {
-            margin: auto ;
+            margin: auto;
             margin-top: 5px;
             margin-bottom: 5px;
             margin-left: 15px;
@@ -74,12 +80,13 @@
             padding: 20px;
             max-width: 97%;
             background-color: var(--white);
-            
+
             border-radius: 38px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             text-align: left;
         }
-        .col-lg{
+
+        .col-lg {
             padding: 0px;
         }
 
@@ -156,125 +163,182 @@
 
 
         .timeline {
-    border-left: 3px solid #727cf5;
-    border-bottom-right-radius: 4px;
-    border-radius: 8px;
-    border-top-right-radius: 4px;
-    background: rgba(114, 124, 245, 0.09);
-    margin: 0 auto;
-    letter-spacing: 0.2px;
-    position: relative;
-    line-height: 1.4em;
-    font-size: 1.03em;
-    padding: 50px;
-    list-style: none;
-    text-align: left;
-    max-width: 40%;
-}
+            border-left: 3px solid #727cf5;
+            border-bottom-right-radius: 4px;
+            border-radius: 8px;
+            border-top-right-radius: 4px;
+            background: rgba(114, 124, 245, 0.09);
+            margin: 0 auto;
+            letter-spacing: 0.2px;
+            position: relative;
+            line-height: 1.4em;
+            font-size: 1.03em;
+            padding: 50px;
+            list-style: none;
+            text-align: left;
+            max-width: 40%;
+        }
 
-@media (max-width: 767px) {
-    .timeline {
-        max-width: 98%;
-        padding: 25px;
-    }
-}
+        @media (max-width: 767px) {
+            .timeline {
+                max-width: 98%;
+                padding: 25px;
+            }
+        }
 
-.timeline h1 {
-    font-weight: 300;
-    font-size: 1.4em;
-}
+        .timeline h1 {
+            font-weight: 300;
+            font-size: 1.4em;
+        }
 
-.timeline h2,
-.timeline h3 {
-    font-weight: 600;
-    font-size: 1rem;
-    margin-bottom: 10px;
-}
+        .timeline h2,
+        .timeline h3 {
+            font-weight: 600;
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
 
-.timeline .event {
-    border-bottom: 1px dashed #e8ebf1;
-    padding-bottom: 25px;
-    margin-bottom: 25px;
-    position: relative;
-}
+        .timeline .event {
+            border-bottom: 1px dashed #e8ebf1;
+            padding-bottom: 25px;
+            margin-bottom: 25px;
+            position: relative;
+        }
 
-@media (max-width: 767px) {
-    .timeline .event {
-        padding-top: 30px;
-    }
-}
+        @media (max-width: 767px) {
+            .timeline .event {
+                padding-top: 30px;
+            }
+        }
 
-.timeline .event:last-of-type {
-    padding-bottom: 0;
-    margin-bottom: 0;
-    border: none;
-}
+        .timeline .event:last-of-type {
+            padding-bottom: 0;
+            margin-bottom: 0;
+            border: none;
+        }
 
-.timeline .event:before,
-.timeline .event:after {
-    position: absolute;
-    display: block;
-    top: 0;
-}
+        .timeline .event:before,
+        .timeline .event:after {
+            position: absolute;
+            display: block;
+            top: 0;
+        }
 
-.timeline .event:before {
-    left: -207px;
-    content: attr(data-date);
-    text-align: right;
-    font-weight: 100;
-    font-size: 0.9em;
-    min-width: 120px;
-}
+        .timeline .event:before {
+            left: -207px;
+            content: attr(data-date);
+            text-align: right;
+            font-weight: 100;
+            font-size: 0.9em;
+            min-width: 120px;
+        }
 
-@media (max-width: 767px) {
-    .timeline .event:before {
-        left: 0px;
-        text-align: left;
-    }
-}
+        @media (max-width: 767px) {
+            .timeline .event:before {
+                left: 0px;
+                text-align: left;
+            }
+        }
 
-.timeline .event:after {
-    -webkit-box-shadow: 0 0 0 3px #727cf5;
-    box-shadow: 0 0 0 3px #727cf5;
-    left: -55.8px;
-    background: #fff;
-    border-radius: 50%;
-    height: 9px;
-    width: 9px;
-    content: "";
-    top: 5px;
-}
+        .timeline .event:after {
+            -webkit-box-shadow: 0 0 0 3px #727cf5;
+            box-shadow: 0 0 0 3px #727cf5;
+            left: -55.8px;
+            background: #fff;
+            border-radius: 50%;
+            height: 9px;
+            width: 9px;
+            content: "";
+            top: 5px;
+        }
 
-@media (max-width: 767px) {
-    .timeline .event:after {
-        left: -31.8px;
-    }
-}
+        @media (max-width: 767px) {
+            .timeline .event:after {
+                left: -31.8px;
+            }
+        }
 
-.rtl .timeline {
-    border-left: 0;
-    text-align: right;
-    border-bottom-right-radius: 0;
-    border-top-right-radius: 0;
-    border-bottom-left-radius: 4px;
-    border-top-left-radius: 4px;
-    border-right: 3px solid #727cf5;
-}
-.timeline {
-    max-width: 70%; /* Adjust this percentage based on your design preference */
-    margin: auto; /* This centers the divs on the page */
-}
-.rtl .timeline .event::before {
-    left: 0;
-    right: -170px;
-}
+        .rtl .timeline {
+            border-left: 0;
+            text-align: right;
+            border-bottom-right-radius: 0;
+            border-top-right-radius: 0;
+            border-bottom-left-radius: 4px;
+            border-top-left-radius: 4px;
+            border-right: 3px solid #727cf5;
+        }
 
-.rtl .timeline .event::after {
-    left: 0;
-    right: -55.8px;
-}
+        .timeline {
+            max-width: 70%;
+            /* Adjust this percentage based on your design preference */
+            margin: auto;
+            /* This centers the divs on the page */
+        }
+
+        .rtl .timeline .event::before {
+            left: 0;
+            right: -170px;
+        }
+
+        .rtl .timeline .event::after {
+            left: 0;
+            right: -55.8px;
+        }
 
 
+
+
+        /* THE BLOW IS CARD
+
+*/
+
+        .c-details span {
+            font-weight: 300;
+            font-size: 13px
+        }
+
+        .icon {
+            width: 50px;
+            height: 50px;
+            background-color: #eee;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 39px
+        }
+
+        .badge span {
+            background-color: #fffbec;
+            width: 60px;
+            height: 25px;
+            padding-bottom: 3px;
+            border-radius: 5px;
+            display: flex;
+            color: #fed85d;
+            justify-content: center;
+            align-items: center
+        }
+
+        .progress {
+            height: 10px;
+            border-radius: 10px
+        }
+
+        .progress div {
+            background-color: red
+        }
+
+        .text1 {
+            font-size: 14px;
+            font-weight: 600
+        }
+
+        .text2 {
+            color: #a5aec0
+        }
+
+        
     </style>
 </head>
 
@@ -315,12 +379,17 @@
 
     <!-- THIS IS THE QUICK ACCESS SCROLL MENU FOR WELCOME PAGE -->
     <center>
-        <p style="font-size: 70px;font-family: 'Rubik';font-weight: 650; margin: 0px;">WELCOME</p>
+        <p style="font-size: 70px;font-family: 'Rubik';font-weight: 650;">WELCOME</p>
         <div class="container horizontal-scrollable" style="margin-bottom: 0px;">
-            <div class="horizontal-scrollableNavRow text-center" style="overflow: scroll; padding-right: 15px;padding-bottom: 0px;">
-                <a href="https://app.groupme.com" target="_blank"><button class="navButtons">GroupMe</button></a>
-                <a href="https://joinhomebase.com" onclick="openHomebaseApp(); return false;"><button class="navButtons">HomeBase</button></a>
+            <div class="horizontal-scrollableNavRow text-center"
+                style="overflow: scroll; padding-right: 15px;padding-bottom: 0px;">
+                <a href="https://app.groupme.com" onclick="openGroupMeApp(); return false;"><button
+                        class="navButtons">GroupMe</button></a>
+                <a href="https://joinhomebase.com" onclick="openHomebaseApp(); return false;"><button
+                        class="navButtons">HomeBase</button></a>
+                        <a href="absenceForm.html"><button class="navButtons">Absence Form</button></a>
                 <a href="trainingMainALL.html"><button class="navButtons">My Courses</button></a>
+                
                 <a href="https://lathambakery.net/"><button class="navButtons">Latham Website</button></a>
 
             </div>
@@ -366,114 +435,186 @@
     </div>
     <!-- ABOVE IS THE MENU ONCE OPEN -->
 
-<div class="row">
+    <!-- <div class="row"> -->
 
 
-    
-    <div class="col-lg">
-        <div class="poll-container">
-            <h3 class="lessonTitle" style="margin-top: 10px;">POLL: <br>How is the new app working?</h3>
-            <ul class="poll-options">
-                <li><label><input type="radio" name="poll" value="Good"> Good</label></li>
-                <li><label><input type="radio" name="poll" value="Excellent"> Excellent</label></li>
-                <li><label><input type="radio" name="poll" value="Bad"> Bed</label></li>
-                <li><label><input type="radio" name="poll" value="Can Be Improved"> Can Be Improved</label></li>
-        
-            </ul>
-            <button class="poll-button" onclick="showResults()">Vote</button>
-            <ul class="poll-results">
-                <li>Good: <div class="bar" data-color="blue" style="width: 35%"></div></li>
-                <li>Excellent: <div class="bar" data-color="green" style="width: 50%"></div></li>
-                <li>Bad: <div class="bar" data-color="red" style="width: 10%"></div></li>
-                <li>Can Be Improved: <div class="bar" data-color="orange" style="width: 5%"></div></li>
-        
-            </ul>
+
+        <div class="col-lg">
+            <div class="card p-3 mb-2" style="border-radius: 20px;margin-left: 15px;margin-right: 15px;margin-top: 20px;">
+                <h3 class="lessonTitle" style="margin-top: 10px;">POLL: <br>How is the new app working?</h3>
+                <ul class="poll-options">
+                    <li><label><input type="radio" name="poll" value="Good"> Good</label></li>
+                    <li><label><input type="radio" name="poll" value="Excellent"> Excellent</label></li>
+                    <li><label><input type="radio" name="poll" value="Bad"> Bed</label></li>
+                    <li><label><input type="radio" name="poll" value="Can Be Improved"> Can Be Improved</label></li>
+
+                </ul>
+                <button class="poll-button" onclick="showResults()">Vote</button>
+                <ul class="poll-results">
+                    <li>Good: <div class="bar" data-color="blue" style="width: 35%"></div>
+                    </li>
+                    <li>Excellent: <div class="bar" data-color="green" style="width: 50%"></div>
+                    </li>
+                    <li>Bad: <div class="bar" data-color="red" style="width: 10%"></div>
+                    </li>
+                    <li>Can Be Improved: <div class="bar" data-color="orange" style="width: 5%"></div>
+                    </li>
+
+                </ul>
+            </div>
+
+
         </div>
 
-
-    </div>
-
-
-    <div class="col-lg">
-        <div class="poll-container">
-            <h3 class="lessonTitle" style="margin-top: 10px;">POLL: <br>How is the new app working?</h3>
-            <ul class="poll-options">
-                <li><label><input type="radio" name="poll" value="Good"> Good</label></li>
-                <li><label><input type="radio" name="poll" value="Excellent"> Excellent</label></li>
-                <li><label><input type="radio" name="poll" value="Bad"> Bed</label></li>
-                <li><label><input type="radio" name="poll" value="Can Be Improved"> Can Be Improved</label></li>
-        
-            </ul>
-            <button class="poll-button" onclick="showResults()">Vote</button>
-            <ul class="poll-results">
-                <li>Good: <div class="bar" data-color="blue" style="width: 35%"></div></li>
-                <li>Excellent: <div class="bar" data-color="green" style="width: 50%"></div></li>
-                <li>Bad: <div class="bar" data-color="red" style="width: 10%"></div></li>
-                <li>Can Be Improved: <div class="bar" data-color="orange" style="width: 5%"></div></li>
-        
-            </ul>
-        </div>
-
-
-    </div> <div class="col-lg">
-        <div class="poll-container">
-            <h3 class="lessonTitle" style="margin-top: 10px;">POLL: <br>How is the new app working?</h3>
-            <ul class="poll-options">
-                <li><label><input type="radio" name="poll" value="Good"> Good</label></li>
-                <li><label><input type="radio" name="poll" value="Excellent"> Excellent</label></li>
-                <li><label><input type="radio" name="poll" value="Bad"> Bed</label></li>
-                <li><label><input type="radio" name="poll" value="Can Be Improved"> Can Be Improved</label></li>
-        
-            </ul>
-            <button class="poll-button" onclick="showResults()">Vote</button>
-            <ul class="poll-results">
-                <li>Good: <div class="bar" data-color="blue" style="width: 35%"></div></li>
-                <li>Excellent: <div class="bar" data-color="green" style="width: 50%"></div></li>
-                <li>Bad: <div class="bar" data-color="red" style="width: 10%"></div></li>
-                <li>Can Be Improved: <div class="bar" data-color="orange" style="width: 5%"></div></li>
-        
-            </ul>
-        </div>
-
-
-    </div>
-    
- 
-
-    
-
-</div>
-
-
-
-<div class="row">
-
-    <div class="container" >
-        <div class="row">
-            <div class="col-md-12">
-                <div class="card" style="border-radius: 38px;">
-                    <div class="card-body">
-                        <h3 class="lessonTitle" style="font-size: 21px;">Timeline</h3>
-                        <div id="content">
-                            <ul class="timeline">
-                                <li class="event" data-date="July 15, 2024">
-                                    <h1> <b>New Bakery Opening Preparation Workshop</b></h1>
-                                    <p>Participate in our comprehensive workshop to prepare for the grand opening of our new bakery location in Dallas. This session will cover all essential procedures, customer service training, and safety protocols to ensure a smooth opening day.</p>
-                                </li>
-                                <li class="event" data-date="July 22, 2024">
-                                   <h1> <b>Summer Seasonal Training Session</b></h1>
-                                    <p>Join us for a seasonal training session focused on summer-themed products and promotions. This workshop will include training on new summer recipes, efficient production techniques, and marketing strategies to enhance our offerings during the summer season.</p>
-                                </li>
-
-                            </ul>
+        <div class="col-lg">
+            <div class="card p-3 mb-2" style="border-radius: 20px;margin-left: 15px;margin-right: 15px;">
+                <div class="d-flex justify-content-between">
+                    <div class="d-flex flex-row align-items-center">
+                        <div class="icon"> <img src="img/appIcon.png" style="width: 50px;border-radius: 100px;" alt="">
+                            <i class="bx bxl-mailchimp"></i>
                         </div>
+                        <div class="ms-2 c-details">
+                            <h6 class="mb-0">Latham Bakery</h6> <span>1 days ago</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="mt-5">
+                    <h3 class="heading"><b>Basics of baking:</b><br>
+                        <p style="margin-bottom: 10px;"></p> Food Safety and Sanitation
+                    </h3>
+                    <div class="mt-5">
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="mt-3"> <span class="text1">6 completed <span class="text2">of 12
+                                    moduals</span></span> </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    
-</div>
+
+
+        <div class="col-lg">
+            <a href="https://groupme.com" onclick="openGroupMeApp(); return false;">
+                <div class="card p-3 mb-2" style="border-radius: 20px;margin-left: 15px;margin-right: 15px;">
+                    <div class="d-flex justify-content-between">
+                        <div class="d-flex flex-row align-items-center">
+                            <div class="icon"> <img
+                                    src="https://play-lh.googleusercontent.com/3v5rY1LyfDpINaf1MIQXOE1cwt37Xnwf1h82UQsqsW8RyF6qaJmgOHxjQ3BGU3MS7A"
+                                    style="width: 50px;border-radius: 100px;" alt="">
+                                <i class="bx bxl-mailchimp"></i>
+                            </div>
+                            <div class="ms-2 c-details">
+                                <h6 class="mb-0">GroupMe</h6> <span>6 hours ago</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="mt-5">
+                        <h3 class="heading" style="margin-top: 0px;"><b>2+ New message from Malinda</b> <br>
+                             Click to find out more
+                        </h3>
+
+                    </div>
+                </div>
+            </a>
+        </div>
+
+
+
+<!-- 
+
+    </div> -->
+
+
+
+ 
+<!-- 
+
+        
+        <div class="col-md-12">
+            <div class="card" style="border-radius: 38px;">
+                <div class="card-body">
+                    <h3 class="lessonTitle" style="font-size: 21px;">Timeline</h3>
+                    <div id="content">
+                        <ul class="timeline">
+                            <li class="event" data-date="July 15, 2024">
+                                <h1> <b>New Bakery Opening Preparation Workshop</b></h1>
+                                <p>Participate in our comprehensive workshop to prepare for the grand opening of our new
+                                    bakery location in Dallas. This session will cover all essential procedures,
+                                    customer service training, and safety protocols to ensure a smooth opening day.</p>
+                            </li>
+                            <li class="event" data-date="July 22, 2024">
+                                <h1> <b>Summer Seasonal Training Session</b></h1>
+                                <p>Join us for a seasonal training session focused on summer-themed products and
+                                    promotions. This workshop will include training on new summer recipes, efficient
+                                    production techniques, and marketing strategies to enhance our offerings during the
+                                    summer season.</p>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+   <!-- <div class="row">
+
+    </div> -->
+<!-- 
+    <div class="row"> -->
+
+
+
+        <div class="col-lg">
+            <div class="card p-3 mb-2" style="border-radius: 20px;margin-left: 15px;margin-right: 15px;">
+                <div class="d-flex justify-content-between">
+                    <div class="d-flex flex-row align-items-center">
+                        <div class="icon"> <img src="img/appIcon.png" style="width: 50px; border-radius: 100px;" alt="App Icon">
+                            <i class="bx bxl-mailchimp"></i>
+                        </div>
+                        <div class="ms-2 c-details">
+                            <h6 class="mb-0">Latham Bakery</h6> <span>4 days ago</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-5">
+                    <h3 class="heading"><b>Absence Approved</b><br>
+                        <p style="margin-bottom: 10px;">Your request for time off has been approved.</p>
+                    </h3>
+                    <div class="mt-5"  style="font-size: 15px;">
+                        <p>Your absence from <strong>August 10th</strong> to <strong>August 15th</strong> has been officially approved. No further actions are required.</p>
+                        <p>Thank you for notifying us in advance. We hope you have a restful break and look forward to your return.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg">
+
+
+            <div class="card p-3 mb-2" style="border-radius: 20px;margin-left: 15px;margin-right: 15px;">
+                <div class="d-flex justify-content-between" style="font-size: 15px;">
+
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <h5 class="card-title heading" style="font-size: 24px;">Event One - <small>July 15, 2024</small></h5>
+                            <p class="card-text">Join us for the annual summer gala, featuring guest speakers from the industry and exciting networking opportunities.</p>
+                        </li>
+                        <li class="list-group-item">
+                            <h5 class="card-title heading" style="font-size: 24px;">Event Two - <small>December 10, 2024</small></h5>
+                            <p class="card-text">Mark your calendars for our end-of-year celebration. Expect a night filled with fun, awards, and a look back at our year's achievements.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg"></div>
+
+    <!-- </div> -->
 
 
 
@@ -500,17 +641,32 @@
 
 
     <script>
-    function openHomebaseApp() {
-        // Attempt to open the Homebase app using its scheme
-        window.location = 'homebase://';
-    
-        // Fallback to opening the website after 500 milliseconds if the app doesn't open
-        setTimeout(function() {
-            window.location = 'https://joinhomebase.com';
-        }, 500);
-    }
+        function openHomebaseApp() {
+            // Attempt to open the Homebase app using its scheme
+            window.location = 'homebase://';
+
+            // Fallback to opening the website after 500 milliseconds if the app doesn't open
+            setTimeout(function () {
+                window.location = 'https://joinhomebase.com';
+            }, 500);
+        }
     </script>
-    
+
+
+
+    <script>
+        function openGroupMeApp() {
+            // Attempt to open the GroupMe app using its scheme
+            window.location = 'groupme://';
+
+            // Fallback to opening the website after a delay if the app doesn't open
+            setTimeout(function () {
+                window.location.href = 'https://app.groupme.com';
+            }, 500); // Delay of 500 milliseconds
+        }
+    </script>
+
+
 </body>
 
 </html>
